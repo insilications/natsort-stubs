@@ -27,11 +27,11 @@ def natsort_keygen(key: Optional[Callable[[Any], Any]] = ..., alg: ns = ...) -> 
 natsort_key: Callable  # TODO: matches rtype of above
 
 def natsorted(
-		seq: Iterable[_T],
-		key: Optional[Callable[[Any], Any]] = ...,
+		seq: Iterable[str],
+		key: Optional[Callable[[str], str]] = ...,
 		reverse: bool = ...,
 		alg: ns = ...,
-		) -> List[_T]: ...
+		) -> List[str]: ...
 
 def humansorted(
 		seq: Iterable[_T],
@@ -48,11 +48,11 @@ def realsorted(
 		) -> List[_T]: ...
 
 def index_natsorted(
-		seq: Iterable,
-		key: Optional[Callable[[Any], Any]] = ...,
+		seq: Iterable[str],
+		key: Optional[Callable[[str], str]] = ...,
 		reverse: bool = ...,
 		alg: ns = ...,
-		) -> Tuple[int, ...]: ...
+		) -> List[int]: ...
 
 def index_humansorted(
 		seq: Iterable,
